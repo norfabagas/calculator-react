@@ -1,3 +1,5 @@
+/* eslint-disable no-eval */
+
 import React from 'react';
 import Input from './components/input';
 import Button from './components/button';
