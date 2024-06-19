@@ -16,12 +16,12 @@ class Input extends Component {
                 className="form-group form-inline"
             >
                 <input
-                    className="form-control col-4"
+                    className="form-control col-8"
                     value={setInput}
                     readOnly
                 />
                 <button
-                    className="btn btn-danger col-2"
+                    className="btn btn-danger col-4"
                     onClick={this.props.onClearInput}
                 >
                     clear

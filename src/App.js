@@ -40,6 +40,8 @@ class App extends React.Component {
 
         if (text === '') {
             return;
+        } else if (text.includes('+') || text.includes('-') || text.includes('/') || text.includes('*')) {
+            return;
         } else {
             text += expression;
             comma = 0;
@@ -83,7 +85,7 @@ class App extends React.Component {
     render() { 
         return (
             <div
-                className="col-6 offset-4 mt-4"
+                className="col-12 mt-4"
             >
                 <Input
                     onClearInput={this.handleClearInput}
